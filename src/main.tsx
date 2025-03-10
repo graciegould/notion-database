@@ -1,10 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import HelloWorld from "./components/HelloWorld";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <HelloWorld />
-  </React.StrictMode>,
-  document.getElementById("app"),
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );
